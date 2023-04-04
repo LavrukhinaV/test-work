@@ -65,6 +65,10 @@ body {
   cursor: pointer;
 }
 
+.questions__list-item-container_content-visible {
+  margin-bottom: 15px;
+}
+
 .questions__list-item-title {
   margin: 0;
   font-size: 25px;
@@ -84,24 +88,21 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
-  transition: .5s;
+  transition: .4s;
 }
 
-.questions__list-item-button_answer-visible {
+.questions__list-item-button_content-visible {
   transform: rotate(45deg);
 }
 
 .questions__list-item-answer {
-  margin-top: 15px;
-  margin-bottom: 0;
-  display: none;
+  margin: 0;
   max-width: 980px;
   font-size: 18px;
   line-height: 25px;
-}
-
-.questions__list-item-answer_visible {
-  display: block;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  overflow: hidden;
 }
 
 @media (max-width: 1279px) {

@@ -1,11 +1,17 @@
 const buttonOpenAnswer = document.querySelectorAll('.questions__list-item-container');
 
 buttonOpenAnswer.forEach((button) => {
-  let answer = button.nextElementSibling;
+  let content = button.nextElementSibling;
   let icon = button.lastElementChild;
 
   button.addEventListener('click', () => {
-    answer.classList.toggle('questions__list-item-answer_visible');
-    icon.classList.toggle('questions__list-item-button_answer-visible');
+    button.classList.toggle('questions__list-item-container_content-visible');
+    icon.classList.toggle('questions__list-item-button_content-visible');
+
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
   })
 });
