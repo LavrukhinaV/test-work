@@ -5,7 +5,7 @@ buttonOpenAnswer.forEach((button) => {
   let icon = button.lastElementChild;
 
   button.addEventListener('click', () => {
-    button.classList.toggle('questions__list-item-container_content-visible');
+    content.classList.toggle('questions__list-item-answer_visible');
     icon.classList.toggle('questions__list-item-button_content-visible');
 
     if (content.style.maxHeight) {
