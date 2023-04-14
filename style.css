@@ -10,6 +10,43 @@ body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
+
+  /* background: 
+  radial-gradient(#BEDDEF 30%, transparent 50%),
+  radial-gradient(#ED7EFF 40%, transparent 50%),
+  radial-gradient(rgba(227, 234, 215, 0.7), transparent 50%),
+  radial-gradient(#EBA5DC 20%, transparent 50%),
+  url(./images/Texture.png),
+  linear-gradient(rgba(245,245,247, 1), rgba(245,245,247, 0.8)),
+  linear-gradient(rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.01));
+
+  background-size:  80vw 120vh, 90vw 90vh, 50vw 50vh, 50vw 50vh, cover, cover, cover;
+  background-position: -150% -100%, -70% 580%, 110% 150%, 150% -20%, center 0, center 0, center 0;
+  background-repeat: no-repeat;
+  background-blend-mode: color;
+  backdrop-filter: blur(84px); */
+
+
+  background: 
+  linear-gradient(#F5F5F7 20%, rgba(237, 126, 255, 0.4), rgba(255, 172, 136, 0.4), #F5F5F7) bottom/100% 100% no-repeat,
+  url(./images/Mobile/Texture-mobile.png) center/cover no-repeat;
+  /* -webkit-radial-gradient(50% 50%, ellipse, rgba(237, 126, 255, .9) 15%, rgba(255, 172, 136,0.4) 35%, transparent 60%) bottom/180% 80%  no-repeat; */
+
+  backdrop-filter: blur(84px);
+  background-blend-mode: darken;
+
+
+
+   /* background: 
+   
+   -webkit-radial-gradient(50% 50%, ellipse, rgba(237, 126, 255,.4) 25%, rgba(255, 172, 136,0.7) 35%, transparent 60%) bottom/180% 80%  no-repeat; */
+
+
+   /* background-size: 180% 80%;
+   background-position: bottom; */
+  /* background-repeat: no-repeat; */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
+ 
 }
 
 .page {
